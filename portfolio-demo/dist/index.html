@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#b51f42">
+    <meta name="description" content="Caso de estudio y demostración interactiva de un sistema universitario para coordinar citas odontológicas. Datos ficticios.">
+    <title>Unidad Odontológica UNS · Caso de estudio</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="Unidad Odontológica UNS, ir al inicio">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M13 9c-5 0-8 4-8 10 0 10 5 22 9 22 3 0 3-12 10-12s7 12 10 12c4 0 9-12 9-22 0-6-3-10-8-10-4 0-6 2-11 2S17 9 13 9Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg></span>
+          <span class="brand-name">UNS<span> / Unidad Odontológica</span></span>
+        </a>
+        <nav aria-label="Navegación principal" class="top-nav">
+          <a href="#proyecto">El proyecto</a>
+          <a href="#demo">Demostración</a>
+          <a href="#alcance">Alcance</a>
+        </nav>
+        <a class="header-cta" href="#demo">Explorar demo <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-rule"></span> Proyecto universitario · Caso de estudio</p>
+            <h1 id="hero-title">Una cita dental mejor coordinada, de principio a fin.</h1>
+            <p class="hero-lede">Una aplicación creada para conectar a pacientes, odontólogos y administración en un mismo flujo de atención. Explora una versión de demostración con datos ficticios.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#demo">Probar la demostración <span aria-hidden="true">→</span></a>
+              <a class="text-link" href="#proyecto">Conocer el proyecto <span aria-hidden="true">↗</span></a>
+            </div>
+            <p class="hero-note">Proyecto académico desarrollado durante mi etapa en la Universidad Nacional del Santa. Esta página no gestiona citas reales.</p>
+          </div>
+          <div class="hero-visual" aria-label="Vista conceptual de una cita y del flujo de atención">
+            <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+            <div class="hero-tooth" aria-hidden="true"><svg viewBox="0 0 220 250" fill="none"><path d="M57 21c-25 0-42 22-42 55 0 57 24 151 51 151 19 0 22-73 44-73s25 73 44 73c27 0 51-94 51-151 0-33-17-55-42-55-22 0-35 11-53 11S79 21 57 21Z" stroke="currentColor" stroke-width="7" stroke-linejoin="round"/></svg></div>
+            <div class="floating-card appointment-card">
+              <div class="floating-card-top"><span class="icon-box icon-calendar" aria-hidden="true">▦</span><span class="status-dot">Cita confirmada</span></div>
+              <strong>Consulta odontológica</strong>
+              <span>Próximo turno · 09:00 a. m.</span>
+              <div class="avatar-row"><span class="avatar avatar-red">CR</span><span>Dra. Camila Reyes</span></div>
+            </div>
+            <div class="floating-card mini-card"><span class="mini-check" aria-hidden="true">✓</span><span><strong>Atención conectada</strong><small>Paciente · Dentista · Gestión</small></span></div>
+            <span class="hero-side-label">DISEÑADO PARA COORDINAR</span>
+          </div>
+        </div>
+        <div class="container hero-bottom"><span>01 / EL PROBLEMA</span><span>Desliza para conocer el sistema <span aria-hidden="true">↓</span></span></div>
+      </section>
+
+      <section class="project-section section-pad" id="proyecto" aria-labelledby="project-title">
+        <div class="container project-grid">
+          <div><p class="section-kicker">Contexto</p><h2 id="project-title">Tres perspectivas.<br><em>Una sola agenda.</em></h2></div>
+          <div class="project-intro"><p>El sistema original, desarrollado con Laravel y MySQL, organiza la reserva, reprogramación y seguimiento de citas. Separa las tareas de pacientes, profesionales y personal administrativo.</p><p>Para mostrar el trabajo en el portfolio, esta demostración reproduce esos recorridos sin usar una base de datos ni información de personas reales.</p></div>
+        </div>
+        <div class="container role-cards" aria-label="Funciones de cada rol">
+          <article class="role-card"><span class="role-index">01</span><div class="role-icon" aria-hidden="true">◌</div><h3>Paciente</h3><p>Explora disponibilidad, reserva un turno y gestiona sus próximas citas.</p><button class="role-card-link" type="button" data-go-role="paciente">Ver recorrido <span aria-hidden="true">↗</span></button></article>
+          <article class="role-card"><span class="role-index">02</span><div class="role-icon" aria-hidden="true">✳</div><h3>Dentista</h3><p>Revisa la agenda y registra la atención de las citas asignadas.</p><button class="role-card-link" type="button" data-go-role="dentista">Ver recorrido <span aria-hidden="true">↗</span></button></article>
+          <article class="role-card"><span class="role-index">03</span><div class="role-icon" aria-hidden="true">▥</div><h3>Administración</h3><p>Observa la actividad y el estado de las citas desde una vista general.</p><button class="role-card-link" type="button" data-go-role="admin">Ver recorrido <span aria-hidden="true">↗</span></button></article>
+        </div>
+      </section>
+
+      <section class="demo-section section-pad" id="demo" aria-labelledby="demo-title">
+        <div class="container demo-heading"><div><p class="section-kicker">Explora el flujo</p><h2 id="demo-title">La experiencia, en tus manos.</h2><p>Cambia de rol y prueba las acciones principales. Todo ocurre en este navegador y se reinicia al recargar.</p></div><span class="demo-badge"><span class="badge-pulse"></span> DEMO INTERACTIVA</span></div>
+        <div class="container"><div class="demo-disclaimer" role="note"><span aria-hidden="true">ⓘ</span><p><strong>Entorno de demostración.</strong> Los nombres, citas y resultados son ficticios. No se crean cuentas ni se envían solicitudes a la Universidad Nacional del Santa.</p></div></div>
+        <div class="container app-frame">
+          <div class="app-topbar"><div class="app-brand"><span class="app-brand-symbol" aria-hidden="true">✳</span><span>UNIDAD ODONTOLÓGICA <small>Espacio de demostración</small></span></div><div class="app-top-right"><span class="app-live"><span></span> Demo interactiva</span><button class="reset-button" id="reset-demo" type="button">Reiniciar datos</button></div></div>
+          <div class="app-body">
+            <aside class="app-sidebar"><p class="sidebar-label">CAMBIAR PERSPECTIVA</p><div class="role-tabs" role="tablist" aria-label="Rol de demostración"><button id="tab-paciente" type="button" role="tab" aria-controls="demo-panel" aria-selected="true" data-role="paciente"><span aria-hidden="true">◌</span> Paciente</button><button id="tab-dentista" type="button" role="tab" aria-controls="demo-panel" aria-selected="false" tabindex="-1" data-role="dentista"><span aria-hidden="true">✳</span> Dentista</button><button id="tab-admin" type="button" role="tab" aria-controls="demo-panel" aria-selected="false" tabindex="-1" data-role="admin"><span aria-hidden="true">▥</span> Administración</button></div><div class="sidebar-foot"><span class="avatar avatar-outline">VD</span><span><strong>Vista de prueba</strong><small>Datos simulados</small></span></div></aside>
+            <div class="app-content"><div id="demo-panel" role="tabpanel" aria-labelledby="tab-paciente" tabindex="0"></div></div>
+          </div>
+        </div>
+        <div class="container demo-caption"><span>RESERVAR</span><span class="caption-line"></span><span>ATENDER</span><span class="caption-line"></span><span>COORDINAR</span></div>
+      </section>
+
+      <section class="scope-section section-pad" id="alcance" aria-labelledby="scope-title"><div class="container scope-grid"><div><p class="section-kicker">Sobre esta versión</p><h2 id="scope-title">Una muestra segura del trabajo original.</h2></div><div class="scope-copy"><p>La aplicación universitaria original utiliza <strong>Laravel, PHP, MySQL y Bootstrap</strong>. Esta presentación separa la experiencia del servicio de citas para que puedas explorarla sin exponer datos personales ni depender de un servidor.</p><div class="scope-facts"><div><span>03</span><small>roles representados</small></div><div><span>00</span><small>datos reales</small></div><div><span>100%</span><small>interacción en el navegador</small></div></div></div></div></section>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><div><strong>UNS / Unidad Odontológica</strong><p>Proyecto académico · Demostración de portfolio</p></div><span>No es un servicio oficial de reserva de citas.</span><a href="https://github.com/AlexDeRivia/unidad-odontologica-uns" target="_blank" rel="noopener noreferrer">Código en GitHub ↗</a><a href="#inicio">Volver arriba ↑</a></div></footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
