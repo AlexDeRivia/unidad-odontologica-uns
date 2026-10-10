@@ -16,20 +16,17 @@
 @media(max-width:430px){.brand-name{font-size:15px}.brand-mark{width:27px}.header-cta{font-size:0;gap:0;min-width:33px}.header-cta span{font-size:16px}.hero-actions{gap:17px}.button-primary{font-size:12px;padding:14px 16px}.appointment-card{left:0;transform:rotate(-4deg) scale(.7)}.mini-card{right:0;transform:rotate(5deg) scale(.72)}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.slot-grid{grid-template-columns:repeat(2,1fr)}.scope-facts{gap:7px}.scope-facts span{font-size:21px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
-/* Footer links are part of the portfolio handoff, so keep them easy to read. */
-.site-footer{padding:42px 0}
-.footer-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,400px) auto;align-items:center;gap:30px}
-.footer-inner .footer-about strong{font-size:18px;line-height:1.35}
-.footer-inner .footer-about p{font-size:15px;line-height:1.5;margin:7px 0 0;color:#e4dbe0}
+/* Compact, readable links for the portfolio handoff. */
+.site-footer{padding:30px 0}
+.footer-inner{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:24px}
+.footer-inner .footer-about strong{font-size:15px;line-height:1.4}
+.footer-inner .footer-about p{font-size:13px;line-height:1.45;margin:4px 0 0;color:#e4dbe0}
 .footer-inner .footer-about .footer-notice{color:#c7b8c0}
-.footer-inner .footer-repo{display:flex;align-items:center;gap:14px;margin:0;padding:17px 19px;border:1px solid #755863;border-radius:12px;background:#382832;color:#fff;transition:background .2s,border-color .2s,transform .2s}
-.footer-inner .footer-repo:hover{background:#49323e;border-color:#d18da3;transform:translateY(-2px)}
-.footer-repo-icon{width:29px;height:29px;flex:none;color:#fff}
-.footer-repo-copy{display:flex;flex-direction:column;gap:3px;min-width:0;margin:0}
-.footer-inner .footer-repo-copy strong{font-size:17px;line-height:1.35}
-.footer-repo-copy small{font-size:14px;color:#d9cbd2;line-height:1.35}
-.footer-inner .footer-repo-arrow{margin:0 0 0 auto;font-size:20px;line-height:1;color:#f0a8bc}
-.footer-inner .footer-back{font-size:16px;font-weight:700;color:#f0dfe7;margin:0;white-space:nowrap}
+.footer-inner .footer-repo{display:inline-flex;align-items:center;justify-self:start;gap:9px;margin:0;padding:10px 13px;border:1px solid #755863;border-radius:8px;background:#382832;color:#fff;transition:background .2s,border-color .2s}
+.footer-inner .footer-repo:hover{background:#49323e;border-color:#d18da3}
+.footer-repo-icon{width:19px;height:19px;flex:none;color:#fff}
+.footer-inner .footer-repo span{font-size:14px;font-weight:600;line-height:1.3;color:#fff;margin:0}
+.footer-inner .footer-back{font-size:13px;font-weight:600;color:#f0dfe7;margin:0;white-space:nowrap}
 .footer-inner .footer-back:hover{text-decoration:underline}
-@media(max-width:850px){.footer-inner{grid-template-columns:minmax(0,1fr) auto;gap:22px}.footer-repo{grid-column:1 / -1;grid-row:2}.footer-back{grid-column:2;grid-row:1}}
-@media(max-width:560px){.footer-inner{grid-template-columns:1fr;gap:20px}.footer-repo{grid-column:1;grid-row:auto}.footer-back{grid-column:1;grid-row:auto}.footer-inner .footer-repo{padding:16px}.footer-inner .footer-about p{font-size:15px}}
+@media(max-width:850px){.footer-inner{grid-template-columns:minmax(0,1fr) auto;gap:16px}.footer-repo{grid-column:1 / -1;grid-row:2}.footer-back{grid-column:2;grid-row:1}}
+@media(max-width:560px){.footer-inner{grid-template-columns:1fr;gap:15px}.footer-repo{grid-column:1;grid-row:2}.footer-back{grid-column:1;grid-row:3}}
