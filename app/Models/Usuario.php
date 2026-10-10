@@ -20,7 +20,7 @@ class Usuario extends Authenticatable
 
     protected $guarded = [];
 
-    protected $password = 'contrasena';
+    protected $authPasswordName = 'contrasena';
 
     /**
      * The attributes that should be hidden for serialization.

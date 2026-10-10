@@ -168,6 +168,25 @@ class SecurityTest extends TestCase
         );
     }
 
+    public function test_existing_patient_can_log_in_with_the_contrasena_column(): void
+    {
+        $patient = Usuario::factory()->create([
+            'correo' => 'paciente-login@example.test',
+            'contrasena' => 'ClaveSegura2026!',
+            'dni' => '00000401',
+            'celular' => '000000401',
+            'sexo_id' => 5,
+            'rol_id' => 3,
+        ]);
+
+        $this->post(route('login.auth'), [
+            'correo' => $patient->correo,
+            'contrasena' => 'ClaveSegura2026!',
+        ])->assertRedirect(route('paciente.home'));
+
+        $this->assertAuthenticatedAs($patient, 'usuarios');
+    }
+
     public function test_login_limits_password_spraying_across_many_addresses_from_one_ip(): void
     {
         for ($attempt = 0; $attempt < 10; $attempt++) {

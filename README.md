@@ -6,18 +6,18 @@ Proyecto académico desarrollado para organizar citas y coordinar la atención o
 
 ## Qué incluye
 
-- Aplicación Laravel 10 con vistas Blade para pacientes, dentistas y administración.
+- Aplicación Laravel 12 con vistas Blade para pacientes, dentistas y administración.
 - Registro, inicio de sesión y gestión de citas, motivos, especialidades y usuarios.
 - Datos de ejemplo sintéticos en los seeders. Las cuentas sembradas tienen contraseñas aleatorias y no ofrecen credenciales predeterminadas.
 - [`portfolio-demo/dist`](portfolio-demo/dist): recorrido independiente, estático y sin backend. Sus datos ficticios viven solo en memoria del navegador.
 
 La demo de Cloudflare Pages procede de `portfolio-demo/dist`. La aplicación Laravel **no** está desplegada públicamente.
 
-> **Estado del backend:** Laravel 10 terminó su soporte de seguridad y el lockfile conserva dependencias con avisos de Composer. Esta versión se comparte para mostrar el trabajo académico y para ejecución local aislada; no debe desplegarse como servicio con usuarios o datos reales hasta actualizar el framework, revisar dependencias y repetir las pruebas.
+> **Estado del backend:** actualizado a Laravel 12. El 10 de octubre de 2026, `composer audit --locked` no encontró avisos de seguridad para las dependencias fijadas y las pruebas automatizadas pasaron. El backend aún no se ha desplegado; antes de usarlo como servicio con pacientes o datos reales se requiere una revisión operativa de seguridad, privacidad y configuración del servidor.
 
 ## Ejecutar Laravel en un entorno local
 
-Requisitos: PHP 8.1 o superior con extensiones de Laravel y PDO MySQL, Composer y MySQL. Node.js es opcional para compilar el pequeño punto de entrada Vite; las vistas existentes cargan los recursos ya incluidos en `public/dist`.
+Requisitos: PHP 8.2 o superior con extensiones de Laravel y PDO MySQL, Composer y MySQL. Node.js es opcional para compilar el pequeño punto de entrada Vite; las vistas existentes cargan los recursos ya incluidos en `public/dist`.
 
 ```powershell
 composer install
@@ -49,6 +49,7 @@ Las pruebas usan SQLite en memoria y no se conectan a la base configurada en `.e
 ```powershell
 php artisan test
 composer validate --no-check-publish
+composer audit --locked
 npm.cmd run build
 ```
 
