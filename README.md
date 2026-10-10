@@ -1,6 +1,6 @@
 # Unidad Odontológica UNS
 
-**Una agenda odontológica para conectar pacientes, profesionales y administración.** Proyecto académico desarrollado durante mi etapa en la Universidad Nacional del Santa, publicado como caso de estudio con autorización.
+**Una agenda odontológica para conectar pacientes, profesionales y administración.** Proyecto académico desarrollado para la Universidad Nacional del Santa.
 
 [Explorar la demo interactiva](https://unidad-odontologica-uns-demo.pages.dev/) · [Ver los flujos](#qué-hace-la-aplicación) · [Ejecutar el proyecto](#puesta-en-marcha-local)
 
